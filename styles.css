@@ -95,7 +95,7 @@
 }
 
 .button:hover {
-    background: #4837ff;
+    background: #4837ff; /* Change to blue */
 }
 
 .navbar__links:hover {
@@ -198,6 +198,10 @@
     padding: 0 50px;
 }
 
+.main__content {
+    text-align: left; /* Align content to the left */
+}
+
 .main__content h1 {
     font-size: 4rem;
     background-color: #ff8177;
@@ -207,6 +211,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-bottom: 20px;
 }
 
 .main__content h2 {
@@ -217,5 +222,117 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.main__content p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.main__btn {
+    display: flex;
+    justify-content: flex-start; /* Align button to the left */
+}
+
+.main__btn a {
+    color: #07176d;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+.main__img--container img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+        padding: 0 20px;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    
+    }
+
+    .main__content h2 {
+        font-size: 3rem;
+    }
+    
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    
+    }
+
+    .main__content h2 {
+        font-size: 2rem;
+    }
+    
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+    
+}
+
+/* Service Section CSS */
+
+.services{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1 {
+    background-color: #ff0844;
+    background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf558c 78%,
+    #b12a5b 100%
+    );
+    background-size: 100%;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
